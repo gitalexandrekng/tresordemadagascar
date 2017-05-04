@@ -1,0 +1,64 @@
+.custombutton{
+    @extend .button;
+    font-family: "PT Sans Narrow";
+    background:lighten($primary-color, 10%);
+}
+
+.general_h2{
+    font-family: "Dancing Script";
+    text-align: center;
+    position:relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    &:after{
+        content:'';
+        height:20px;
+        width:400px;
+        background:lighten($primary-color, 43%);
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+        position:absolute;
+        z-index:10;
+    }
+
+    span{
+        position:relative;
+        z-index:10;
+        display: block;
+        z-index:20;
+    }
+}
+
+.general_h4{
+    font-family: "PT Sans Narrow";
+    margin-top:15px;
+    font-size:16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+
+    &:after{
+        content:'';
+        height:1px;
+        width:100%;
+        background:lighten(black,90%);
+        position:absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        margin:auto;
+    }
+
+    span{
+        background:white;
+        position:relative;
+        z-index:10;
+        padding:0px 10px;
+    }
+}

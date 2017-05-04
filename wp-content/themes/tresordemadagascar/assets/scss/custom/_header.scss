@@ -1,0 +1,165 @@
+.nav-top{
+    background:#141a1f;
+    width:100vw;
+    padding:0px 0px 0px 0px;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:999;
+    opacity:0;
+    transition: 0.3s;
+    padding:15px 0px;
+
+    .in_navigation{
+        max-width: 1200px;
+        position:relative;
+        margin:auto;
+
+        .logo{
+            position:absolute;
+            left:0;
+            top:0;
+            bottom:0;
+            margin:auto;
+            color:white;
+            font-family: "Dancing Script";
+            font-size:26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .madagascar{
+                color:$primary-color;
+                font-size:36px;
+                margin-top:-20px;
+            }
+        }
+
+        .navboutique{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .li_item{
+                font-size:12px;
+                color:lighten(#9a9a9a,10%);
+                padding:0px 30px 0px 0px;
+                display: block;
+            }
+
+            .btn{
+                background:#1c232a;
+                color:#9a9a9a;
+                font-size:14px;
+                padding:10px 15px;
+                display: block;
+
+                &:hover{
+                    background:lighten(#1c232a,5%);
+                    color:white;
+                }
+
+                i{
+                    margin-right:10px;
+                }
+            }
+        }
+
+        .menu-topnav-container{
+            padding:5px 0px;
+
+            #menu-topnav{
+                display: flex;
+                justify-content: flex-end;
+                font-family: "PT Sans Narrow";
+
+                .searchicon{
+                    a{
+                        padding-right:0px;
+                    }
+                }
+
+                li{
+                    position:relative;
+
+                    &:after{
+                        content:'';
+                        height:10px;
+                        width:1px;
+                        background:rgba(255,255,255,0.3);
+                        top:0;
+                        bottom:0;
+                        left:0;
+                        margin:auto;
+                        position:absolute;
+                    }
+
+                    a{
+                        color:white;
+                        font-size: 14px;
+
+                        &:hover{
+                            color:$primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.shownav{
+    opacity: 1;
+    padding:0px;
+}
+
+.top_header{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position:relative;
+
+    &:after{
+        content:'';
+        position:absolute;
+        width:100%;
+        height:75%;
+        background:linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0));
+    }
+
+    .content_header{
+        position:relative;
+        z-index:10;
+        color:white;
+        text-align: center;
+
+        .title{
+            font-family: "Dancing Script";
+            font-size:62px;
+        }
+
+        .subtitle{
+            font-size:18px;
+            margin-bottom:20px;
+            font-weight: bold;
+        }
+
+        .find_you{
+            margin-top:20px;
+            font-family: "PT Sans Narrow";
+            margin-bottom:20px;
+            font-size:12px;
+            letter-spacing: 2px;
+            //background:rgba(0,0,0,0.5);
+            padding:20px 0px;
+
+            i{
+                display: block;
+                margin-top:12px;
+            }
+        }
+    }
+}

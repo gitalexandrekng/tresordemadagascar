@@ -1,0 +1,99 @@
+.footer_container{
+    .reassurance{
+        padding:50px 0px;
+        background:#252b31;
+
+        .case{
+            text-align: center;
+            width: 100%;
+
+            i{
+                color:$primary-color;
+                font-size:32px;
+            }
+
+            .t{
+                color:white;
+                font-weight:bold;
+                margin-top:25px;
+            }
+
+            .txt{
+                color:lighten(black,60%);
+                font-size:14px;
+                margin-top:10px;
+            }
+        }
+    }
+
+    .bottom_bottom{
+        background:#2a3138;
+        padding:30px 0px;
+
+        .left{
+            ul{
+                margin:0;
+                padding:0;
+
+                li{
+                    list-style-type: none;
+                    display: inline-block;
+
+                    a{
+                        color:white;
+                        margin-right:25px;
+                        display: block;
+
+                        i{
+                            font-size:18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right{
+            text-align: right;
+
+            ul{
+                margin:0;
+                padding:0;
+
+                li{
+                    list-style-type: none;
+                    display: inline-block;
+
+                    a{
+                        font-size:14px;
+                        color:white;
+                        margin-left:25px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyr{
+        color:rgba(255,255,255,0.5);
+        background:#2a3138;
+        padding:10px 0px;
+        text-align: center;
+        font-size:12px;
+        position:relative;
+
+        &:after{
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            height:1px;
+            width:100%;
+            background:linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.1), rgba(255,255,255,0))
+        }
+
+        a{
+            color:rgba(255,255,255,0.5);
+        }
+    }
+}
